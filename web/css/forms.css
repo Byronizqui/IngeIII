@@ -1,0 +1,141 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25-oct-2016, 16:01:51
+    Author     : Mery Zúñiga
+*/
+.form-horizontal input:focus:invalid, .form-horizontal textarea:focus:invalid span{ /* when a field is considered invalid by the browser */
+    /*background: #fff url(images/invalid.png) no-repeat 98% center;*/
+    box-shadow: 0 0 7px #d45252;
+    border-color: #b03535;
+    
+}
+
+.form-horizontal input:required:valid, .form-horizontal textarea:required:valid { /* when a field is considered valid by the browser */
+    /*background: #fff url(images/valid.png) no-repeat 98% center;*/
+    box-shadow: 0 0 7px #5cd053;
+    border-color: #28921f;
+}
+
+.has-error .form-control-feedback {
+    color: #b03535;
+}
+.has-success .form-control-feedback {
+    color: #5cd053;
+}
+
+.input form-control {
+    font-family: "Arvo",Helvetica,Arial,sans-seri;
+    font-size: 12px;
+}
+
+.form-horizontal input, option{
+    font-family: "Arvo",Helvetica,Arial,sans-seri;
+    font-size: 12px;
+}
+
+select{
+   font-family: "Arvo",Helvetica,Arial,sans-seri;
+    font-size: 12px; 
+}
+.fila-base{ 
+    display: none;
+}
+
+.input-group {
+    display: table;
+}
+
+.required{
+    color: black;
+}
+
+#activo{
+    
+}
+
+#form1{
+    font-family: 'Arvo', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.form-control{
+    font-family: 'Arvo', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+
+.table td img{
+    width: 25px;
+    height: 25px;
+}
+
+.status.wrong-entry {
+  -moz-animation: wrong-log 0.3s;
+  -webkit-animation: wrong-log 0.3s;
+  animation: wrong-log 0.3s;
+}
+
+.status.wrong-entry .form-control, .wrong-entry .form-control + .fa {
+  border-color: #ed1c24;
+  color: #ed1c24;
+}
+
+/*.link {
+  text-decoration: none;
+  color: #C6C6C6;
+  float: right;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.link:hover {
+  text-decoration: underline;
+  color: #8C918F;
+}*/
+
+.alert {
+  display: none;
+  font-size: 12px;
+  color: #f00;
+  float: left;
+}
+
+
+
+
+@-moz-keyframes wrong-log {
+  0%, 100% {
+    left: 0px;
+  }
+  20% , 60% {
+    left: 15px;
+  }
+  40% , 80% {
+    left: -15px;
+  }
+}
+@-webkit-keyframes wrong-log {
+  0%, 100% {
+    left: 0px;
+  }
+  20% , 60% {
+    left: 15px;
+  }
+  40% , 80% {
+    left: -15px;
+  }
+}
+@keyframes wrong-log {
+  0%, 100% {
+    left: 0px;
+  }
+  20% , 60% {
+    left: 15px;
+  }
+  40% , 80% {
+    left: -15px;
+  }
+}

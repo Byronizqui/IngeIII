@@ -1,0 +1,12 @@
+<ul class="nav navbar-nav navbar-right">
+    <li class="">
+        <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            <img src="media/images/user.png" alt=""><%= session.getAttribute("nick")%>
+            <span class=" fa fa-angle-down"></span>
+        </a>
+        <ul class="dropdown-menu dropdown-usermenu pull-right">
+            <li><a id="administrar" href="gestionarUsuarios.jsp"><i class="fa fa-cog pull-right" ></i> Gestión de Usuarios</a></li>
+            <li><a id="logout"><i class="fa fa-sign-out pull-right" ></i> Cerrar Sesión</a></li>
+        </ul>
+    </li>
+</ul>

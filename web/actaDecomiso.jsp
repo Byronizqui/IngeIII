@@ -30,7 +30,7 @@ Author     : Mery Zúñiga
         <link href="css/custom.min.css" rel="stylesheet">
         <link href="css/forms.css" rel="stylesheet">
         <link rel="shortcut icon" href="media/images/logo2.ico" type="image/x-icon" />
-
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
     </head>
 
@@ -337,6 +337,8 @@ Author     : Mery Zúñiga
 </div>
         <!-- jQuery -->
         <script src="js/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <!-- Bootstrap -->
         <script src="js/bootstrap.min.js"></script>
         <!-- FastClick -->

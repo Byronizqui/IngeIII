@@ -193,3 +193,25 @@ Proxy.actaDecomiso = function (criterio) {
         }
     });
 };
+
+
+Proxy.completePolicias = function () {
+
+    $.ajax({
+        url: "/SistemaDecomisos/Servlet?action=listadoPolicias",
+        type: "POST",
+        dataType: 'json',
+        contentType: "application/x-www-form-urlencoded",
+        success: function (data) {
+            var names = [];
+            for (var i = 0; i < data.length; i++) {
+                names.push(data[i].nombre);
+            }
+            $('#id_policia').autocomplete({
+                source: names
+            });
+                var appendTo = $( "#id_policia" ).autocomplete( "option", "source" );
+            alert("Mergas");
+        }
+    });
+};

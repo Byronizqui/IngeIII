@@ -7,12 +7,23 @@ $(document).ready(function () {
         else
             erroresActa();
     });
-    
     putNumActa();
+    $('#id_policia').change(function () {
+
+        //Cuando se escribe algo en el texto de policia se autocompleta el formulario
+
+    });
+
+    $(document).ready(function () {
+        $('#tags').on('autocompletechange change', function () {
+            $('#tagsname').html('You selected: ' + this.value);
+        }).change();
+    });
 });
 
-function putNumActa(){
+function putNumActa() {
     Proxy.ultimaActa();
+    Proxy.completePolicias();
 }
 
 function enviarActa() {
@@ -32,10 +43,10 @@ function enviarActa() {
     var horaDecomiso = $('#hora').val();
     var iDate = formatDate(new Date().getUTCDate());
     var interesado = new Interesado(1, $('#fechaNac').val() === "" ? iDate : $('#fechaNac').val(), lugar,
-            $('#id_interesado').val() === "" ? "NA" : $('#id_interesado').val(), 
+            $('#id_interesado').val() === "" ? "NA" : $('#id_interesado').val(),
             $('#nombre_interesado').val() === "" ? "NA" : $('#nombre_interesado').val(),
-            $('#apellido1_interesado').val() === "" ? "NA" : $('#apellido1_interesado').val(), 
-            $('#apellido2_interesado').val() === "" ? "NA" : $('#apellido2_interesado').val(), 
+            $('#apellido1_interesado').val() === "" ? "NA" : $('#apellido1_interesado').val(),
+            $('#apellido2_interesado').val() === "" ? "NA" : $('#apellido2_interesado').val(),
             "En algun lugar de heredia");
     var decomisos = [new Decomiso(5, "a", 1, "xxx"), new Decomiso(6, "a", 1, "xxx")];
     var observaciones = "a";
